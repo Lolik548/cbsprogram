@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше Мини-приложение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="header">
+            <img src="#" alt="Ваш логотип" class="logo">
+        </div>
+
+        <div class="main-menu buttons-container">
+             <p>Выберите раздел для перехода:</p>
+            <button class="app-button" data-section="reviews">Отзывы</button>
+            <button class="app-button" data-section="tutorial">Туториал</button>
+            <button class="app-button" data-section="buy">Покупка</button>
+            <button class="app-button" data-section="telegram">Наш Telegram</button>
+            <button class="app-button" data-section="scamlist">Скам лист</button>
+            <button class="app-button" data-section="support">Техподдержка</button>
+            <button class="app-button" data-section="faq">FAQ</button>
+        </div>
+
+        <div id="page-reviews" class="app-page hidden">
+            <h2>Отзывы</h2>
+            <p>Здесь будет контент раздела "Отзывы". Вы можете добавить текст, изображения, списки, ссылки и т.д.</p>
+            <p>Пример отзыва: "Очень понравилось приложение! Удобно и быстро."</p>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        <div id="page-tutorial" class="app-page hidden">
+            <h2>Туториал</h2>
+             <p>Здесь будет контент раздела "Туториал". Пошаговые инструкции, видеоуроки, примеры.</p>
+             <p>Шаг 1: Сделайте то-то...</p>
+             <p>Шаг 2: Затем это...</p>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        <div id="page-buy" class="app-page hidden">
+            <h2>Покупка</h2>
+             <p>Здесь будет информация о том, как совершить покупку. Описание товаров/услуг, тарифы, способы оплаты.</p>
+             <p>Наши предложения:</p>
+             <ul>
+                 <li>Пакет "Старт" - ...</li>
+                 <li>Пакет "Профи" - ...</li>
+             </ul>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        <div id="page-scamlist" class="app-page hidden">
+            <h2>Скам лист</h2>
+             <p>Здесь будет список мошенников или подозрительных ресурсов, связанных с вашей тематикой.</p>
+             <p>Будьте осторожны с:</p>
+             <ul>
+                 <li>Пользователь @username_1 (причина)</li>
+                 <li>Сайт example-scam.com</li>
+             </ul>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        <div id="page-support" class="app-page hidden">
+            <h2>Техподдержка</h2>
+             <p>Если у вас возникли вопросы или проблемы, свяжитесь с нами:</p>
+            <p>Email: <a href="mailto:support@example.com" style="color: #4a90e2;">support@example.com</a></p>
+            <p>Telegram: <a href="https://t.me/your_support_username" style="color: #4a90e2;">@your_support_username</a></p>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        <div id="page-faq" class="app-page hidden">
+            <h2>FAQ (Часто задаваемые вопросы)</h2>
+             <p>Здесь собраны ответы на часто задаваемые вопросы.</p>
+             <p><strong>Вопрос 1:</strong> Как мне начать?</p>
+             <p><strong>Ответ:</strong> Прочитайте раздел "Туториал".</p>
+             <p><strong>Вопрос 2:</strong> Как оплатить?</p>
+             <p><strong>Ответ:</strong> Информация есть в разделе "Покупка".</p>
+            <button class="back-button">← Назад к меню</button>
+        </div>
+
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
